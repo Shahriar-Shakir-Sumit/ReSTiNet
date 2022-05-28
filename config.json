@@ -1,0 +1,37 @@
+{
+    "model" : {
+        "backend":              "Tiny Yolo",
+        "input_size":           416,
+        "anchors":              [0.37,0.52, 1.16,1.64, 2.82,3.73, 5.28,6.55, 11.30,7.7],
+        "max_box_per_image":    10,        
+        "labels":               ["person"]
+
+    },
+
+    "train": {
+        "train_image_folder":   "/home/sumit/Desktop/keras-yolo2/pascal/VOC2012/images/train/",
+        "train_annot_folder":   "/home/sumit/Desktop/keras-yolo2/pascal/VOC2012/Annotations/train/",     
+          
+        "train_times":          8,
+        "pretrained_weights":   "",
+        "batch_size":           16,
+        "learning_rate":        1e-4,
+        "nb_epochs":            4,
+        "warmup_epochs":        3,
+
+        "object_scale":         5.0 ,
+        "no_object_scale":      1.0,
+        "coord_scale":          1.0,
+        "class_scale":          1.0,
+
+        "saved_weights_name":   "/home/sumit/Desktop/Tiny-Yolo-voc.weights",
+        "debug":               true
+    },
+
+    "valid": {
+        "valid_image_folder":   "/home/sumit/Desktop/keras-yolo2/pascal/VOC2012/images/valid/",
+        "valid_annot_folder":   "/home/sumit/Desktop/keras-yolo2/pascal/VOC2012/Annotations/valid/",
+
+        "valid_times":          1
+    }
+}
