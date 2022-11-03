@@ -1,4 +1,4 @@
-# ResTiNet
+# ReSTiNet
 
 We propose ReSTiNet, a novel compressed convolutional neural network that addresses the issues of size, detection speed, and accuracy. 
 
